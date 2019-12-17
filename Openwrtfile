@@ -7,11 +7,11 @@ FROM gitpod/workspace-full
 USER root
 # Install custom tools, runtime, etc.
 RUN apt-get update && apt-get install -y \
-        asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache flex g++ \
-        gawk gcc gcc-multilib gettext git git-core help2man htop lib32gcc1 libc6-dev-i386 \
-        libglib2.0-dev libncurses5-dev libssl-dev libtool libz-dev libelf-dev make msmtp \
-        ncurses-term ocaml-nox p7zip p7zip-full patch qemu-utils sharutils subversion texinfo \
-        uglifyjs unzip upx xmlto yui-compressor zlib1g-dev cmake uuid-runtime \
+        asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache \
+        flex g++ gawk gcc gcc-multilib gettext git git-core help2man htop lib32gcc1 \
+        libc6-dev-i386 libglib2.0-dev libncurses5-dev libssl-dev libtool libz-dev libelf-dev \
+        make msmtp ncurses-term ocaml-nox p7zip p7zip-full patch qemu-utils sharutils \
+        subversion texinfo uglifyjs unzip upx xmlto yui-compressor zlib1g-dev cmake uuid-runtime device-tree-compiler \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
 # Apply user-specific settings
