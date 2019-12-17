@@ -2,7 +2,7 @@
 #reference momokind
 #-------------------
 
-FROM gitpod/workspace-full:split-left
+FROM gitpod/workspace-full
 
 USER root
 # Install custom tools, runtime, etc.
